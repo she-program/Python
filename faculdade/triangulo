@@ -1,0 +1,18 @@
+# lados de um triângulo:
+a = int(input('Digite um número: '))
+b = int(input('Digite outro número: '))
+c = int(input('Digite outro número: '))
+if (a > 0) and (b > 0) and (c > 0):  # nenhum lado pode ser = ou menor que zero
+    if (a + b > c) and (b + c > a) and (a + c > b):  # nenhum lado pode ser maior que a soma dos outros dois
+        print('Obá! Temos um triângulo!')
+        if (a == b) and (b == c):
+            print('Seu triângulo é EQUILÁTERO!')
+        else:
+            if (a != b) and (b != c) and (a != c):
+                print('Seu triângulo é ESCALENO!')
+            else:
+                print('Seu triângulo é ISÓSCELES!')
+    else:
+        print('Isso não é um triângulo!')
+else:
+    print('Tente novamente!')
