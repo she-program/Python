@@ -1,0 +1,12 @@
+soma = 0
+cont = 1
+while (cont <= 5): # a contagem começa em 1 e vai até 5
+    #lê a nota:
+    x = float(input('Digite a {}ª nota: '.format(cont)))
+    #soma a nota:
+    soma += x #equivalente a "soma + x"
+    #conta de um em um
+    cont = cont + 1 #equivalente a "cont += 1"
+    # faz a média, dividindo por 5 que é a quantidade de notas.
+media = soma / 5
+print('Média final: {}'.format(media))
